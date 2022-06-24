@@ -1,4 +1,13 @@
 {
+  "name": "react_shop",
+  "version": "1.0.0",
+  "description": "react shop",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \" \" && exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack --mode production"
+  },
   "dependencies": {
     "@babel/core": "^7.18.5",
     "@babel/preset-env": "^7.18.2",
