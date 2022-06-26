@@ -11,3 +11,6 @@ npm i mini-css-extract-plugin css-loader style-loader sass sass-loader -D
 test en visual studio code en github
 
 test push desde visual studio code
+
+install router
+npm install react-router-dom
