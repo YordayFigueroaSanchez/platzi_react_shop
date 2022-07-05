@@ -24,11 +24,11 @@ const App = () => {
                     <Route path="/login" element={<Login />} />
                     <Route path="/recovery-pass" element={<RecoveryPass />} />
                     <Route path="/send-email" element={<SendMail />} />
-                    <Route path="/new-password" component={<NewPassword />} />
-					<Route path="/account" component={<MyAccount />} />
-					<Route path="/signup" component={<CreateAccount />} />
-					<Route path="/checkout" component={<Checkout />} />
-					<Route path="/orders" component={<Orders />} />
+                    <Route path="/new-password" element={<NewPassword />} />
+					<Route path="/account" element={<MyAccount />} />
+					<Route path="/signup" element={<CreateAccount />} />
+					<Route path="/checkout" element={<Checkout />} />
+					<Route path="/orders" element={<Orders />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </Layout>
