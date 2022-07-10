@@ -14,3 +14,10 @@ test push desde visual studio code
 
 install router
 npm install react-router-dom
+
+api
+https://api.escuelajs.co/docs/#/
+
+npm install axios
+
+npm install @babel/plugin-transform-runtime
