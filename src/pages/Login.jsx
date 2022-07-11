@@ -4,7 +4,8 @@ import '@styles/Login.scss';
 const Login = () => {
     const form = useRef(null);
 
-    const handleSubmit = () => {
+    const handleSubmit = (event) => {
+        event.preventDefault();
         const formData = new FormData(form.current);
         const data = {
             username: formData.get('email'),
@@ -24,10 +25,14 @@ const Login = () => {
 					<input type="text" name="email" placeholder="platzi@example.cm" className="input input-email" />
 					<label htmlFor="password" className="label">Password</label>
 					<input type="password" name="password" placeholder="*********" className="input input-password" />
-					<input type="submit" value="Log in" className="primary-button login-button" />
+					<button 
+                        onClick={handleSubmit}
+                        className="primary-button login-button" >
+                        Sing in
+                    </button>
 					<a href="/">Forgot my password</a>
 				</form>
-                <button className="secondary-button signup-button" onClick={handleSubmit}>
+                <button className="secondary-button signup-button" >
                     Sign up
                 </button>
             </div>
