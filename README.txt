@@ -21,3 +21,9 @@ https://api.escuelajs.co/docs/#/
 npm install axios
 
 npm install @babel/plugin-transform-runtime
+
+agregar context
+    agregar directorio context y 
+    modificar App
+    agregar custom hooks (useInitialState)
+    
